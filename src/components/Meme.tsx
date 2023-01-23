@@ -1,4 +1,7 @@
+import html2canvas from "html2canvas";
 import React, { useEffect } from "react";
+import download from "downloadjs";
+import Header from "./Header";
 
 export default function Meme() {
   const [meme, setMeme] = React.useState({
@@ -36,6 +39,14 @@ export default function Meme() {
     });
   }
 
+  async function downloadImage() {
+    const canvas = await html2canvas(document.getElementById("meme"), {
+      useCORS: true,
+    });
+    const dataURL = canvas.toDataURL("image/png");
+    download(dataURL, "download.png", "image/png");
+  }
+
   return (
     <main>
       <div className="form">
@@ -60,10 +71,16 @@ export default function Meme() {
         </button>
       </div>
 
-      <div className="meme">
+      <div className="meme" id="meme">
         <img src={meme.randomImage} className="meme--image" />
         <h2 className="meme--text top">{meme.topText}</h2>
         <h2 className="meme--text bottom">{meme.bottomText}</h2>
+      </div>
+
+      <div className="form">
+        <button className="form--button" onClick={downloadImage}>
+          Download image 🖼
+        </button>
       </div>
     </main>
   );
