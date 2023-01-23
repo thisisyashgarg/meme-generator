@@ -1,10 +1,10 @@
 # Meme Generator
 
-This is a meme generator that takes input text and dynamically adds it to the meme. You can download the meme as well.
+This is a meme generator that genrates a random meme template and takes input text, dynamically adds it to a meme. You can download the meme as well. This was a fun project to make. Have fun with it.
 
 ## Getting Started
 
-Clone the project by using `git clone ` and install the dependencies with `npm install`.
+Clone the project by using `git clone https://github.com/thisisyashgarg/meme-generator.git` and install the dependencies with `npm install`.
 
 ## Usage
 
