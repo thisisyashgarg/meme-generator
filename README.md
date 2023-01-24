@@ -21,3 +21,7 @@ This project relies on:
 - html2canvas
 - downloadjs
 - parcel
+
+## Screenshot
+
+![Screenshot](/src/images/Screenshot%202023-01-24%20at%2011.34.11%20PM.png)
