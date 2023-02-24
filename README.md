@@ -1,6 +1,6 @@
 # Meme Generator ( [Try it out](https://creatememes.netlify.app) )
 
-This is a meme generator that genrates a random meme template and takes input text, dynamically adds it to a meme. You can download the meme as well. Have fun with it.
+This is a meme generator that generates a random meme template and takes input text, dynamically adds it to a meme. You can download the meme as well. Have fun with it.
 
 ## Getting Started
 
