@@ -6,9 +6,9 @@ export default function Header() {
     <header className="header">
       <img src={logo} className="header--image" />
       <h2 className="header--title">Meme Generator</h2>
-      <h4 className="header--project">
+      {/* <h4 className="header--project">
         Created by <a href="https://linktr.ee/thisisyashgarg">Yash Garg</a>
-      </h4>
+      </h4> */}
     </header>
   );
 }
